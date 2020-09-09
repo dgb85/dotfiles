@@ -12,13 +12,14 @@
 #
 
 set $mod Mod4
+set $term urxvt
 
 for_window [class=".*"] border pixel 0
 gaps inner 10
 gaps outer 5 
 
 # scratchpad terminal
-exec --no-startup-id urxvt -name dropdown &
+exec --no-startup-id $term -name dropdown -e tmux &
 
 bindsym $mod+u [instance="dropdown"] scratchpad show, move position center
 
@@ -54,7 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
