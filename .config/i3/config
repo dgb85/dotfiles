@@ -19,7 +19,7 @@ gaps inner 10
 gaps outer 5 
 
 # scratchpad terminal
-exec --no-startup-id $term -name dropdown -e tmux &
+exec --no-startup-id $term -name dropdown -e tmux new -s scratch &
 
 bindsym $mod+u [instance="dropdown"] scratchpad show, move position center
 
