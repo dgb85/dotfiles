@@ -57,6 +57,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec $term
 
+# capture region of screen and copy to clipboard
+bindsym --release $mod+p exec "import png:- | xclip -selection clipboard -t image/png"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
