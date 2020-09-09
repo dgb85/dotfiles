@@ -15,3 +15,4 @@ alias refl='/usr/bin/sudo /usr/bin/reflector --country="New Zealand" --sort rate
 
 # Custom git command for managing dotfiles
 alias config='/usr/bin/git --git-dir=/home/dan/dotfiles --work-tree=/home/dan'
+
