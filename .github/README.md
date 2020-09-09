@@ -9,3 +9,5 @@ git init --bare $HOME/dotfiles alias config='/usr/bin/git --git-dir=$HOME/dotfil
 Basic usage example:
 
 config add /path/to/file config commit -m "A short message" config push
+
+The i3 config assumes URXVT as terminal and for the screenshot command to work you need to have the import command which is a part of ImageMagick and also the xclip package.
