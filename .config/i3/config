@@ -18,8 +18,11 @@ for_window [class=".*"] border pixel 0
 gaps inner 10
 gaps outer 5 
 
+# launch polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # scratchpad terminal
-exec --no-startup-id $term -name dropdown -e tmux new -s scratch &
+exec --no-startup-id $term -name dropdown -e tmux new-session -A -s scratch &
 
 bindsym $mod+u [instance="dropdown"] scratchpad show, move position center
 
@@ -193,6 +196,6 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks
-}
+#bar {
+#        status_command i3blocks
+#}
