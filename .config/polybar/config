@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem xbacklight alsa pulseaudio memory cpu wlan laptop-eth eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -241,10 +241,27 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
+[module/laptop-eth]
+type = internal/network
+interval = 3.0
+interface = enp0s25
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+
 [module/eth]
 type = internal/network
-interface = enp0s25
 interval = 3.0
+interface = enp3s0
 
 format-connected-underline = #55aa55
 format-connected-prefix = " "
