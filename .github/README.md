@@ -1,11 +1,13 @@
 All my linux & software config files.
 
-I maintain my dotfiles using a bare git repository as demonstrated by DistroTube: https://www.youtube.com/watch?v=tBoLDpTWVOM
+I maintain my dotfiles using a bare git repository as demonstrated by DistroTube: https://www.youtube.com/watch?v=tBoLDpTWVOM and detailed in this article: https://www.atlassian.com/git/tutorials/dotfiles
 
 To set up:
 
 $ git init --bare $HOME/dotfiles 
+
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add this alias to .bashrc) 
+
 $ config config --local status.showUntrackedFiles no
 
 Basic usage example:
