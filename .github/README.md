@@ -15,6 +15,8 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add thi
 
 $ config config --local status.showUntrackedFiles no
 
+$ config remote add origin https://[token]@github.com/[user]/[repo]
+
 Basic usage example:
 
 $ config add /path/to/file  
