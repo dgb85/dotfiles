@@ -25,7 +25,7 @@ POWERLINE_BASH_SELECT=1
 # My Aliases
 
 # Reflector
-alias refl='/usr/bin/sudo /usr/bin/reflector --country="New Zealand" --sort rate --latest 5 --save /etc/pacman.d/mirrorlist'
+alias refl='/usr/bin/sudo /usr/bin/reflector --sort rate --latest 5 --save /etc/pacman.d/mirrorlist'
 
 # General self explanatory shortcuts
 alias v='vim'
@@ -33,3 +33,5 @@ alias v='vim'
 # Custom git command for managing dotfiles
 alias config='/usr/bin/git --git-dir=/home/dan/dotfiles --work-tree=/home/dan'
 
+# typing plocate is hard work
+alias locate='plocate'
