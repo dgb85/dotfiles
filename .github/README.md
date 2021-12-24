@@ -2,9 +2,9 @@ All my linux & software config files.
 
 I maintain my dotfiles using a bare git repository as demonstrated by DistroTube: https://www.youtube.com/watch?v=tBoLDpTWVOM and detailed in this article: https://www.atlassian.com/git/tutorials/dotfiles
 
-Update 25-12-2021:\ 
-  You need to use key stuff with github for this to work, they no longer accept user/pass authentication.\
-  Changed terminal emulator to alacritty\
+Update 25-12-2021:  
+  You need to use key stuff with github for this to work, they no longer accept user/pass authentication.  
+  Changed terminal emulator to alacritty  
   Changed compositor to picom
 
 To set up:
