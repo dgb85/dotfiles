@@ -22,7 +22,7 @@ gaps outer 5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # scratchpad terminal
-exec --no-startup-id $term -name dropdown -e tmux new-session -A -s scratch &
+exec --no-startup-id $term --class dropdown -e tmux new-session -A -s scratch &
 
 bindsym $mod+Shift+x exec $HOME/scripts/lock.sh
 
