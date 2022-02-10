@@ -58,7 +58,7 @@ font-0 = Ubuntu Mono derivative Powerline:style=Regular:size=12;1
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = filesystem xbacklight alsa pulseaudio memory cpu wlan laptop-eth eth battery temperature date powermenu
+modules-right = filesystem xbacklight alsa memory cpu wlan laptop-eth eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -207,7 +207,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "CPU: "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -215,7 +215,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "RAM: "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -248,7 +248,7 @@ interval = 3.0
 interface = enp0s25
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = "ETH: "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -265,7 +265,7 @@ interval = 3.0
 interface = enp3s0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = "ETH: "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 

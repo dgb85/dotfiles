@@ -35,3 +35,6 @@ alias config='/usr/bin/git --git-dir=/home/dan/dotfiles --work-tree=/home/dan'
 
 # typing plocate is hard work
 alias locate='plocate'
+
+# weather alias
+alias wttr='curl wttr.in/invercargill'

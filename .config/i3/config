@@ -24,11 +24,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # scratchpad terminal
 exec --no-startup-id $term --class dropdown -e tmux new-session -A -s scratch &
 
-bindsym $mod+Shift+x exec $HOME/scripts/lock.sh
-
-bindsym $mod+u [instance="dropdown"] scratchpad show, move position center
-
-for_window [instance="dropdown"] floating enable, resize set 800 600, move scratchpad, border pixel 2
 
 
 for_window [instance="Godot_Engine" class="^(?!Godot).*$"] floating enable
@@ -207,6 +202,11 @@ exec_always --no-startup-id /usr/bin/feh --randomize --bg-scale ~/wallpapers/*
 
 # load compositor
 exec_always --no-startup-id picom -b
+
+bindsym $mod+Shift+x exec $HOME/scripts/lock.sh
+bindsym $mod+u [instance="dropdown"] scratchpad show, move position center
+for_window [instance="dropdown"] floating enable, resize set 800 600, move scratchpad, border pixel 2
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
